@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Profile Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      padding: 20px;
+    }
+    .header {
+      text-align: center;
+      border-bottom: 2px solid #000;
+      margin-bottom: 15px;
+    }
+    .header h2 {
+      margin: 0;
+      font-size: 22px;
+      text-transform: uppercase;
+    }
+    .header p {
+      margin: 4px 0;
+      font-size: 14px;
+    }
+    .header hr {
+      margin: 10px 0;
+    }
+    .contact {
+      font-size: 14px;
+    }
+    h3 {
+      text-align: center;
+      background: #e0e0e0;
+      padding: 8px;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+    }
+    td, th {
+      border: 1px solid #000;
+      padding: 6px;
+      font-size: 14px;
+      vertical-align: top;
+    }
+    input, select, textarea {
+      width: 98%;
+      padding: 5px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+    .radio-group label {
+      margin-right: 15px;
+    }
+    .submit-btn {
+      width: 200px;
+      margin: 20px auto;
+      display: block;
+      padding: 10px;
+      font-weight: bold;
+      background: #1976d2;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .submit-btn:hover {
+      background: #0d47a1;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQeS3lC-5FSlFgEtCAj83fBYlrg9Iimf6Bw&s" alt="Logo" style="float: left; height: 120px; margin-right: 20px;">
+  <h2>GAYATRI VIDYA PARISHAD COLLEGE OF ENGINEERING FOR WOMEN(A)</h2>
+  <p>Madhurawada :: Visakhapatnam – 530 048</p>
+  <p>(Approved by AICTE, New Delhi and Permanently Affiliated to Andhra University, Visakhapatnam)</p>
+  <p>Accredited by NAAC with “A” from 2022 to 2027</p>
+  <p>CSE, ECE and IT Courses Accredited by NBA (2019-2022) and Re-accredited by NBA (2022-2025)</p>
+  <p>EEE Course Accredited by NBA (2023-2026)</p>
+  <p class="contact">
+    Ph: 0891-2739144 | Fax: 0891-2526639 | e-mail: gvpcwex@gmail.com | Website: www.gvpcw.ac.in
+  </p>
+  <hr>
+  <h3>STUDENT PROFILE</h3>
+</div>
+
+<!-- Student Info -->
+<table>
+  <tr>
+    <td>H T NO</td>
+    <td><input type="text"></td><br>
+    <td>NAME OF THE STUDENT (as per SSC)</td>
+    <td><input type="text"></td>
+    <td>BRANCH</td>
+    <td><input type="text"></td>
+    </tr></table>
+  </tr>
+  <table>
+  <tr>
+    <td>Date of Birth (as per SSC)</td>
+    <td><input type="date"></td>
+    <td>AADHAR No. (self)</td>
+    <td><input type="text"></td>
+    <td>Mobile No. (Self)</td>
+    <td><input type="text"></td>
+  </tr>
+  <tr>
+    <td>e-mail ID</td>
+    <td colspan="5"><input type="email" style="width: 100%;"></td>
+  </tr>
+</table>
+
+<!-- Educational Details -->
+<h3>Educational Details</h3>
+<table>
+  <tr>
+    <th>SSC / CBSE etc</th>
+    <th>% of Marks</th>
+    <th>GRADE</th>
+    <th>School of Study & Place</th>
+  </tr>
+  <tr>
+    <td></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+  </tr>
+  <tr>
+    <th>INTERMEDIATE / +2 / DIPLOMA</th>
+    <th>% of Marks</th>
+    <th>GRADE</th>
+    <th>College of Study & Place</th>
+  </tr>
+  <tr>
+    <td></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+  </tr>
+</table>
+
+<!-- Qualifying Exams -->
+<h3>Qualifying Examination Details</h3>
+<table>
+  <tr>
+    <th>EAMCET</th>
+    <th>JEE</th>
+    <th>ECET (Diploma)</th>
+  </tr>
+  <tr>
+    <td>H T NO: <input type="text"><br>YEAR: <input type="text"><br>RANK: <input type="text"></td>
+    <td>H T NO: <input type="text"><br>YEAR: <input type="text"><br>RANK: <input type="text"></td>
+    <td>H T NO: <input type="text"><br>YEAR: <input type="text"><br>RANK: <input type="text"></td>
+  </tr>
+</table>
+
+<!-- Admission Details -->
+<h3>Admission Details</h3>
+    <table>
+      <tr>
+        <td>Category of Admission</td>
+        <td><select><option>EAMCET</option><option>SPOT</option><option>ECET</option></select></td>
+        <td>Nationality & Religion</td>
+        <td><input type="text" /></td>
+        <td>Caste & Category</td>
+        <td><input type="text" /></td>
+        <td>State to which belongs to</td>
+        <td><input type="text" placeholder="Example - AP"/></td>
+      </tr>
+      <tr>
+        <td colspan="2">Cat A</td><td colspan="2"><input type="checkbox" /></td>
+        <td colspan="2">Cat B</td><td colspan="2"><input type="checkbox" /></td>
+      </tr></table>
+
+<p><strong>Availing AP Govt. Fee Reimbursement Scheme:</strong>
+  <label><input type="radio" name="fee"> YES</label>
+  <label><input type="radio" name="fee"> NO</label>
+  <label><input type="radio" name="fee"> EWS</label>
+</p>
+
+<!-- Parent Details -->
+<h3>Details of Parents</h3>
+<table>
+  <tr><th></th><th>Father’s Name</th><th>Mother’s Name</th></tr>
+  <tr><td>Qualification</td><td><input type="text"></td><td><input type="text"></td></tr>
+  <tr><td>Occupation</td><td><input type="text"></td><td><input type="text"></td></tr>
+  <tr><td>Annual Income</td><td><input type="text"></td><td><input type="text"></td></tr>
+  <tr><td>Land Line (Off/Res)</td><td><input type="text"></td><td><input type="text"></td></tr>
+  <tr><td>Mobile No.</td><td><input type="text"></td><td><input type="text"></td></tr>
+  <tr><td>e-mail ID</td><td><input type="email"></td><td><input type="email"></td></tr>
+</table>
+
+<table>
+  <tr><th>PERMANENT ADDRESS</th><th>CONTACT ADDRESS</th></tr>
+  <tr>
+    <td><textarea rows="3"></textarea></td>
+    <td><textarea rows="3"></textarea></td>
+  </tr>
+</table>
+
+<!-- Hostel and Local Guardian -->
+<h3>Hostel / Local Guardian Details</h3>
+<table>
+  <tr>
+    <th>DETAILS OF HOSTEL (if any)</th>
+    <th>Details of LOCAL Guardian</th>
+  </tr>
+  <tr>
+    <td>
+          Hostel (Name): <input type="text" /><br />
+          Address: <input type="text" /><br />
+          Phone No.: <input type="text" /><br />
+          Mobile No.: <input type="text" />
+        </td>
+        <td>
+          Name: <input type="text" /><br />
+          Address: <input type="text" /><br />
+          Phone No.: <input type="text" /><br />
+          Mobile No.: <input type="text" />
+        </td>
+      </tr>
+    </table>
+  <button class="submit-btn" onclick="submitForm()">Submit</button>
+<script>
+  function submitForm() {
+    alert("Form submitted successfully!");
+  }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+  
+
+
+
+<
+
+
+
+
